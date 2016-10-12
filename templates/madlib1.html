@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs{% endblock %}
+
+{% block header1 %}Once upon a time...{% endblock %}
+
+{% block content %}
+  <p>
+    There once was a <b>{{ color }} {{ noun }}</b> sitting in the Hackbright Lab. When <u>{{ person }}</u> went to pick it up, it burst into flames in a totally 
+    {% if adjectives %}
+    {% for adjective in adjectives %}
+    <i>{{ adjective }}, </i>
+    {% endfor %}
+    and 
+    {% endif %}
+    amazing way.
+  </p>
+{% endblock %}

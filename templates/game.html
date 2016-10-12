@@ -1,9 +1,9 @@
-<!doctype html>
-<html>
-<head>
-  <title>Game On</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Game On{% endblock %}
+
+{% block header1 %}Sup Playa...{% endblock %}
+
+{% block content %}
   <form action="/madlib" method="GET">
     <label>Give us a name!</label>
     <input type="text" name="person">
@@ -29,5 +29,4 @@
     <br>
     <input type="submit" value="Submit!">
   </form>
-</body>
-</html>
+{% endblock %}

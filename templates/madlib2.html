@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs{% endblock %}
+
+{% block header1 %}Trump said...{% endblock %}
+
+{% block content %}
+  <p>
+    {{ person }}, the {{ color }} {{ noun }} was a very popular {{ noun }} &mdash; the most 
+    {% if adjectives %}
+    {% for adjective in adjectives %}
+    <i>{{ adjective }}, </i>
+    {% endfor %}
+    and 
+    {% endif %} 
+    zealous {{ noun }}.
+  </p>
+{% endblock %}
