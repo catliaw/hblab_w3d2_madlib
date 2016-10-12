@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>Game On</title>
+</head>
+<body>
+  <form action="/madlib" method="GET">
+    <label>Give us a name!</label>
+    <input type="text" name="person">
+    <br>
+    <label>What is your favorite color?</label>
+    <select name="color">
+      <option value="yellow">Yellow</option>
+      <option value="blue">Blue</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+    </select>
+    <br>
+    <label>Pick a noun:</label>
+    <input type="radio" name="noun" value="fox">Fox
+    <input type="radio" name="noun" value="tiger">Tiger
+    <input type="radio" name="noun" value="hound">Hound
+    <br>
+    <label>Choose adjective(s)!</label>
+    <input type="checkbox" name="adjectives" value="wonderful">Wonderful
+    <input type="checkbox" name="adjectives" value="fabulous">Fabulous
+    <input type="checkbox" name="adjectives" value="fancy">Fancy
+    <input type="checkbox" name="adjectives" value="deplorable">Deplorable
+    <br>
+    <input type="submit" value="Submit!">
+  </form>
+</body>
+</html>
